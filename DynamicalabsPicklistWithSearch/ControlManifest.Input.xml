@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Dynamicalabs.PicklistWithSearch" constructor="DynamicalabsPicklistWithSearch" version="0.0.1" display-name-key="DynamicalabsPicklistWithSearch" description-key="DynamicalabsPicklistWithSearch description" control-type="standard">
+    <property name="OptionValue" display-name-key="PickListWithSearch_Display_Key" description-key="PickListWithSearch_Display_Key" of-type="OptionSet" usage="bound" required="true" />
+
+    <external-service-usage enabled="true"></external-service-usage>
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/picklistWithSearch.css" order="1" />
+    </resources>
+
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+
+  </control>
+</manifest>

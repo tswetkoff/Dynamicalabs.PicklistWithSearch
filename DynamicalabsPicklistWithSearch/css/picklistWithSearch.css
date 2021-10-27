@@ -1,0 +1,120 @@
+.dnl-option-container {
+    font-family: "Segoe UI";
+    background-color: initial;
+    height: 35px;
+    border: 1px solid white;
+    width: calc(100% - 2px) !important; }
+    .dnl-option-container .selected-label {
+      cursor: pointer;
+      padding-left: 7px;
+      width: calc(100% - 10px);
+      position: relative;
+      top: 7px;
+      float: left;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      display: inline-block; }
+    .dnl-option-container .dnl-input-element {
+      height: 33px;
+      border: none;
+      width: calc(100% - 44px);
+      padding-left: 7px;
+      padding-right: 7px;
+      float: left;
+      display: none; }
+    .dnl-option-container .dnl-search-btn {
+      position: absolute;
+      border: none;
+      width: 30px;
+      background: none;
+      color: #2196F3;
+      font-size: 17px;
+      position: relative;
+      height: 100%;
+      padding: 0;
+      text-align: left;
+      display: inline-block;
+      opacity: 0; }
+      .dnl-option-container .dnl-search-btn svg {
+        fill: currentColor;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        left: 5px;
+        top: 1px;
+        height: 18px;
+        color: black; }
+    .dnl-option-container .custom-dropdown-container {
+      font-family: SegoeUI, "Segoe UI";
+      border: 1px solid #d8d8d8;
+      background-color: white;
+      z-index: 30;
+      position: absolute;
+      max-height: 335px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 330px;
+      margin-top: 1px;
+      display: none; }
+      .dnl-option-container .custom-dropdown-container .custom-drop-down-scrollable {
+        max-height: 330px;
+        overflow-y: auto; }
+        .dnl-option-container .custom-dropdown-container .custom-drop-down-scrollable .custom-drop-down-item {
+          font-weight: normal;
+          font-size: 14px;
+          cursor: pointer;
+          padding: 5px;
+          padding-left: 5px; }
+          .dnl-option-container .custom-dropdown-container .custom-drop-down-scrollable .custom-drop-down-item:hover {
+            background-color: lightgrey; }
+          .dnl-option-container .custom-dropdown-container .custom-drop-down-scrollable .custom-drop-down-item.selected {
+            background-color: lightgrey; }
+          .dnl-option-container .custom-dropdown-container .custom-drop-down-scrollable .custom-drop-down-item .option-text {
+            display: inline-block;
+            width: 100%;
+            line-height: 15px; }
+            .dnl-option-container .custom-dropdown-container .custom-drop-down-scrollable .custom-drop-down-item .option-text .option-name {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis; }
+      .dnl-option-container .custom-dropdown-container .custom-drop-down-footer {
+        border-top: 1px solid lightgray;
+        padding: 5px;
+        background-color: white; }
+    .dnl-option-container:hover, .dnl-option-container:focus-within {
+      border: 1px solid black; }
+      .dnl-option-container:hover .dnl-search-btn, .dnl-option-container:focus-within .dnl-search-btn {
+        opacity: 0.5;
+        position: relative; }
+      .dnl-option-container:hover .selected-label, .dnl-option-container:focus-within .selected-label {
+        display: none;
+        font-weight: normal;
+        letter-spacing: normal;
+        width: calc(100% - 38px); }
+      .dnl-option-container:hover .dnl-input-element, .dnl-option-container:focus-within .dnl-input-element {
+        display: inline-block; }
+    .dnl-option-container.expanded {
+      border: 1px solid black; }
+      .dnl-option-container.expanded .selected-label {
+        font-weight: normal;
+        letter-spacing: normal;
+        width: calc(100% - 38px); }
+      .dnl-option-container.expanded .dnl-input-element {
+        display: inline-block; }
+      .dnl-option-container.expanded .custom-dropdown-container {
+        display: block; }
+      .dnl-option-container.expanded .dnl-search-btn {
+        opacity: 0.5;
+        position: relative; }
+    .dnl-option-container.expanded-top .custom-dropdown-container {
+      margin-top: -367px; }
+      .dnl-option-container.expanded-top .custom-dropdown-container .custom-drop-down-scrollable {
+        height: 330px; }
+    .dnl-option-container.selected .dnl-input-element {
+      display: none; }
+    .dnl-option-container.selected .selected-label {
+      display: inline-block; }
+  
